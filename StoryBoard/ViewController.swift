@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnSecondVC(_ sender: UIButton) {
-        
+        print("go to second vc")
         let secondVC = self.storyboard?.instantiateViewController(identifier: "SecondViewController") as! SecondViewController
         self.navigationController?.pushViewController(secondVC, animated: true)
     }

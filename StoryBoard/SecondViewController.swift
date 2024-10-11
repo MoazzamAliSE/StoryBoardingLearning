@@ -14,16 +14,19 @@ class SecondViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+//    print("go to second vc")
+//    let secondVC = self.storyboard?.instantiateViewController(identifier: "SecondViewController") as! SecondViewController
+//    self.navigationController?.pushViewController(secondVC, animated: true)
+    @IBAction func btnThirdVC(_ sender: UIButton) {
+        print("go to third vc")
+        let thirdVC = self.storyboard?.instantiateViewController(identifier: "ThirdViewController") as! ThirdViewController
+        self.navigationController?.pushViewController(thirdVC, animated: true)
+        
     }
-    */
+    
+    @IBAction func btnHomeVC(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
 
 }
